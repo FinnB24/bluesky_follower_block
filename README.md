@@ -10,9 +10,9 @@ Features/How it works:
 5.	Persistent Storage: Found and blocked handles are stored in found_handles.txt and blocked_handles.txt.
 
 Configuration:
-Before running the tool, update your Bluesky handle and app password in the script:
+Before running the tool, update your Bluesky handle and app password in the script:                                ![image](https://github.com/user-attachments/assets/6c208dc1-149a-4842-86bd-2e00184166c9)
 - Open the script file in a text/code editor.
 - Replace the placeholders for in line 10/11 with your Bluesky credentials:
     -> BSKY_HANDLE = "yourhandle.bsky.social"
     -> BSKY_PASSWORD = "yourapppassword"
-![image](https://github.com/user-attachments/assets/6c208dc1-149a-4842-86bd-2e00184166c9)
+
