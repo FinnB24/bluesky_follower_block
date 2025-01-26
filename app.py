@@ -249,8 +249,6 @@ def show_found_handles_txt():
         messagebox.showerror("Error", "The 'found_handles.txt' file does not exist.")
 
 # Function to fetch and show the details of a selected handle
-# Function to fetch and show the details of a selected handle
-# Function to fetch and show the details of a selected handle
 def show_handle_details(handle):
     try:
         # Ensure the client is authenticated before fetching profile data
