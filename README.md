@@ -9,8 +9,7 @@ This is a Python-based tool to search, manage, and block user profiles on the Bl
 ## Personal Note
 
 The main reason I created this was to prevent spam/trolling accounts or accounts that promote *certain links* from following my account. Even though blocking these profiles prevents them from interacting with any of your content, they still count as followers. Searching for all of these accounts and blocking them individually takes too much time. 
-
-I noticed people on Reddit and Bluesky support pages asking for an option to remove followers. Since that isn’t currently possible due to how Bluesky works, I designed this tool to block accounts before they find my profile. 
+I noticed people on Reddit and Bluesky support pages asking for an option to remove followers. Since that isn’t currently possible due to how Bluesky works, I made this tool to block accounts before they find my profile. 
 
 This tool can also be used to find people with similar interests. For instance, you could search for "Screenwrite," and it would return profiles with "Screenwriter" or "Screenwriting" in their handle, name, or bio.
 
@@ -19,21 +18,21 @@ This tool can also be used to find people with similar interests. For instance, 
 ## Features / How It Works
 
 ### Main UI
-- Upon running the program, this is the interface you’ll see:  
+- After running the program, this is the interface you’ll see:  
   ![image](https://github.com/user-attachments/assets/6c208dc1-149a-4842-86bd-2e00184166c9)
 
 ### Features:
 1. **Keyword-Based Profile Search**  
    - Input keyword(s) to search for (e.g., "photographer").  
-   - The tool searches the handle, profile name, and bio for the specified keywords (case-insensitive).  
-   - Links can also be searched for. Separate multiple keywords with commas (e.g., "photographer, artist, blogger").  
+   - The tool searches the handle, profile name, and bio for the specified keywords (upper/lower case dont matter).  
+   - Links can also be searched for. Separate multiple keywords with commas (e.g., "photographer, artist, linkedin.com").  
 
 2. **Control Search Size**  
    - Specify the number of profiles to retrieve (must be between 1 and 100).  
 
 3. **Found Profiles**  
    - After searching, the program saves all found profiles into `found_handles.txt` for future reference.  
-   - The "Total Handles" display updates to show how many profiles were found (it will typically match the number you set).
+   - The "Total Handles" display updates to show how many profiles were found and are currently stored in the txt (It will update after each search).
 
 4. **View Profile Details**  
    - Click "Show Found Handles (TXT)" to view the saved handles in a pop-up window.  
@@ -54,21 +53,20 @@ This tool can also be used to find people with similar interests. For instance, 
   In the "Show Found Handles" pop-up, text is currently not selectable. To copy a handle, you’ll need to open `found_handles.txt` manually and search for it there.  
 
 - **Individual Blocking**  
-  You can’t yet select specific accounts to block; you can only specify the number of accounts to block from the top of the list.
+  You can’t yet select specific accounts to block; you can only specify the number of accounts to block from the top of the list. (Because, like i said, this was mainly coded to Bulk-block accounts that very often have the same keywords somehere on their profile ... iykyk)
 
 ---
 
 ## Configuration
 
-Before running the program, you must provide your Bluesky credentials in the script:
+Before running the program, you need to provide your Bluesky credentials in the script:
 
 1. Open the script file in a text/code editor.  
-2. Locate these lines near the top of the file:  
+2. In line 10/11, replace `yourhandle.bsky.social` and `yourapppassword` with your Bluesky handle and app password. 
    ```python
    BSKY_HANDLE = "yourhandle.bsky.social"
    BSKY_PASSWORD = "yourapppassword"
-   ```  
-3. Replace `yourhandle.bsky.social` and `yourapppassword` with your Bluesky handle and app password, respectively.  
+   ```   
 
 ---
 
@@ -84,6 +82,7 @@ Before running the program, you must provide your Bluesky credentials in the scr
 3. **Block Accounts**  
    - Set the number of accounts to block (e.g., 20) and click "Block Selected Handles."  
    - The first 20 profiles from `found_handles.txt` will be blocked and moved to `blocked_handles.txt`.
+   - The other 30 will remain in the `found_handles.txt`. The "Total Handles" display will display "30".
 
 ---
 
@@ -115,7 +114,3 @@ Before running the program, you must provide your Bluesky credentials in the scr
 ## License
 
 This project is licensed under the MIT License. Feel free to use, modify, and share it!  
-
----
-
-Let me know if you want this tailored further, or if you'd like help setting up a GitHub repository to showcase this project! 😊
