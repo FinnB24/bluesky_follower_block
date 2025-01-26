@@ -8,9 +8,9 @@ This is a Python-based tool to search, manage, and block user profiles on the Bl
 
 ## Personal Note
 I have not looked up if someone else has already created something like this. If so - ... well here is my version I guess.
-The main reason I created this was to prevent spam/trolling accounts or accounts that promote *certain links* from following my account. Even though blocking these profiles prevents them from interacting with any of your content, they still count as followers. Searching for all of these accounts and blocking them individually takes too much time. 
+The main reason I created this was to prevent spam/trolling accounts or accounts that promote OF/similar Links from following my account. Even though blocking these profiles prevents them from interacting with any of your content, they still count as followers. Searching for all of these accounts and blocking them individually takes too much time. 
 I noticed people on Reddit and Bluesky support pages asking for an option to remove followers. Since that isn’t currently possible due to how Bluesky works, I made this tool to block accounts before they find my profile. 
-
+Note that also any users that relpied to any posts of an account that promotes *certain links* will get blocked, since the response to a pose does also fall in the search pattern.
 This tool can also be used to find people with similar interests. For instance, you could search for "Screenwrite," and it would return profiles with "Screenwriter" or "Screenwriting" in their handle, name, or bio.
 
 ---
