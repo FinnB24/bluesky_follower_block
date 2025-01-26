@@ -7,7 +7,7 @@ This is a Python-based tool to search, manage, and block user profiles on the Bl
 ---
 
 ## Personal Note
-
+I have not looked up if someone else has already created something like this. If so - ... well here is my version I guess.
 The main reason I created this was to prevent spam/trolling accounts or accounts that promote *certain links* from following my account. Even though blocking these profiles prevents them from interacting with any of your content, they still count as followers. Searching for all of these accounts and blocking them individually takes too much time. 
 I noticed people on Reddit and Bluesky support pages asking for an option to remove followers. Since that isn’t currently possible due to how Bluesky works, I made this tool to block accounts before they find my profile. 
 
@@ -40,7 +40,9 @@ This tool can also be used to find people with similar interests. For instance, 
 
 5. **Block Accounts**  
    - Specify the number of accounts to block (between 1 and 100).  
-   - Click "Block Selected Handles" to block them. Blocked profiles are removed from `found_handles.txt` and added to `blocked_handles.txt`.  
+   - Click "Block Selected Handles" to block them. Blocked profiles are removed from `found_handles.txt` and added to `blocked_handles.txt`.
+   
+  (Both .txt files will be automatically created)
 
 ---
 
@@ -113,4 +115,5 @@ Before running the program, you need to provide your Bluesky credentials in the 
 
 ## License
 
-This project is licensed under the MIT License. Feel free to use, modify, and share it!  
+This project is licensed under the MIT License. 
+(Feel free to use, modify, and share it but just dont claim it as your own.)
