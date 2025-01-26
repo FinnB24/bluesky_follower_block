@@ -18,7 +18,8 @@ This tool can also be used to find people with similar interests. For instance, 
 ## Features / How It Works
 
 ### Main UI
-- After running the program, this is the interface you’ll see:  
+- After running the program, this is the interface you’ll see (Beautiful Design. I know):
+  
   ![image](https://github.com/user-attachments/assets/6c208dc1-149a-4842-86bd-2e00184166c9)
 
 ### Features:
