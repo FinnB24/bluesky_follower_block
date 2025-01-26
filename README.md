@@ -90,7 +90,7 @@ Before running the program, you need to provide your Bluesky credentials in the 
 
 ## File Structure
 
-- `main.py` – The main Python script for the program.  
+- `app.py` – The main Python script for the program.  
 - `found_handles.txt` – Stores all profiles found during searches.  
 - `blocked_handles.txt` – Stores all profiles that have been blocked.  
 
